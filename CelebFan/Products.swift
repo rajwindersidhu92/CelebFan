@@ -10,8 +10,6 @@ import Foundation
 
 class Products : IDisplay{
     
-    
-    
     var  productsId  : String
     
     var  productsName : String
@@ -36,7 +34,7 @@ class Products : IDisplay{
     
     func Display() {
         print("*********************************")
-        print("\t ProductID: \(self.productsId)")
+        print("\n\t ProductID: \(self.productsId)")
         print("\t ProductName: \(self.productsName)")
         print("\t ProductType: \(self.productsType)\n")
         

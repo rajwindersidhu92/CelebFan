@@ -60,7 +60,7 @@ Users.addUsers(user : seller3)
 var seller4 = Seller(id: 444, firstName: "Naina", lastName: "Khan", gender: Gender.Female, email: "NK@gmail.com", password: "452525", userType: UserType.Seller, productList: [product7,product8], address: address4, bank: bankDetails4)
 Users.addUsers(user : seller4)
 
-var buyer1 = Buyer(id: 555, firstName: "Kishore", lastName: "Narang", gender: Gender.Male, email: "Kishore@gmail.com", password: "1237778", userType: UserType.Buyer, productList: [product1], bankAccountEmail: "cibc123@gmail.com")
+var buyer1 = Buyer(id: 555, firstName: "Kishore", lastName: "Narang", gender: Gender.Male, email: "Kishore1@gmail.com", password: "000000", userType: UserType.Buyer, productList: [product1], bankAccountEmail: "cibc123@gmail.com")
 Users.addUsers(user : buyer1)
 
 var buyer2 = Buyer(id: 666, firstName: "Tirlok", lastName: "Bhist", gender: Gender.Male, email: "Kishore@gmail.com", password: "123123", userType: UserType.Buyer, productList: [product2], bankAccountEmail: "cibc123@gmail.com")
@@ -82,9 +82,22 @@ func enterEmail() -> String {
     
     var returnVariable = ""
     if email?.isEmpty == false {
+        var temp : Int = 0
         let isValidEmail = email?.isVAlidEmail()
         if isValidEmail == true{
-            returnVariable = email!
+            for item in Users.dictUsers{
+                if item.value.email.lowercased() == email?.lowercased(){
+                   temp = 1
+                }
+            }
+            
+            if temp == 1{
+                print("Email already exist please try again")
+                return enterEmail()
+            }else{
+                returnVariable = email!
+                
+            }
         }else{
             print("you enter invalid email \(String(describing: email))")
             print("Please Enter Email Again")
@@ -357,7 +370,6 @@ func getUserOptions(user : Users)  {
             }
             getUserOptions(user: user)
         case "2":
-            getUserOptions(user: user)
             for item in Products.arrayProducts{
                 item.Display()
             }
@@ -475,7 +487,6 @@ func signInFunction(){
         let isValidEmail = emailInput?.isVAlidEmail()
         if isValidEmail == true{
             let user = Users.findUser(email: emailInput!)
-            print(user.email)
             if user.email != "" {
                 print("you enter valid email \(String(describing: emailInput!))")
                 passwordFunction(user : user)

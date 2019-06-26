@@ -22,7 +22,7 @@ class Buyer: Users  {
     
     override func Display() {
         super.Display()
-        print("\tBankDetails: \(bankAccountEmail)\n")
+        print("\n\tBankDetails: \(bankAccountEmail)\n")
     }
     
 }
