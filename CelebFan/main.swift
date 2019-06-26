@@ -326,7 +326,7 @@ func getUserOptions(user : Users)  {
             print("Enter Bank Email Id")
             let vbankDetail = enterEmail()
             
-            let b = Buyer(id: vid!, firstName: vfirstName, lastName: vlastName, gender: gender, email: vemail, password: vpassword, userType: vtype, bankAccountEmail: vbankDetail)
+            let b = Buyer(id: vid!, firstName: vfirstName, lastName: vlastName, gender: gender, email: vemail, password: vpassword, userType: vtype, productList: [], bankAccountEmail: vbankDetail)
             print("user added")
             
             Users.addUsers(user: b)
@@ -540,7 +540,7 @@ func signUpFunction(){
     print("Enter Bank Email Id")
     let vbankDetail = enterEmail()
     
-    let b = Buyer(id: vid!, firstName: vfirstName, lastName: vlastName, gender: gender, email: vemail, password: vpassword, userType: vtype, bankAccountEmail: vbankDetail)
+    let b = Buyer(id: vid!, firstName: vfirstName, lastName: vlastName, gender: gender, email: vemail, password: vpassword, userType: vtype, productList: [], bankAccountEmail: vbankDetail)
     
     Users.addUsers(user: b)
     

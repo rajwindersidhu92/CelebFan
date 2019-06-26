@@ -51,7 +51,7 @@ class Seller: Users {
     var bankDetails : Bank
     
     
-    init(id:Int , firstName : String , lastName : String ,gender : Gender , email : String , password : String, userType : UserType = UserType.Seller, productList : [Products]?  , address : Address , bank : Bank) {
+    init(id:Int , firstName : String , lastName : String ,gender : Gender , email : String , password : String, userType : UserType , productList : [Products]?  , address : Address , bank : Bank) {
         
         self.address = Address()
         

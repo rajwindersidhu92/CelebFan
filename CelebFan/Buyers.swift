@@ -12,7 +12,7 @@ class Buyer: Users  {
     
     var bankAccountEmail : String
     
-    init(id: Int , firstName : String , lastName : String , gender : Gender , email : String , password : String , userType : UserType = UserType.Buyer, productList : [Products] = [] , bankAccountEmail : String) {
+    init(id: Int , firstName : String , lastName : String , gender : Gender , email : String , password : String , userType : UserType = UserType.Buyer, productList : [Products], bankAccountEmail : String) {
         
         self.bankAccountEmail = bankAccountEmail
         
@@ -21,6 +21,7 @@ class Buyer: Users  {
     }
     
     override func Display() {
+        super.Display()
         print("\tBankDetails: \(bankAccountEmail)\n")
     }
     

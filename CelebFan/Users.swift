@@ -25,7 +25,7 @@ class Users : IDisplay{
         self.gender = gender
         self.email = email
         self.password = password
-        self.userType = UserType.Buyer
+        self.userType = userType
         let a = arrayProducts!
         do {
             self.arrayProducts = a
