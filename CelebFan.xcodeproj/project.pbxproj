@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9B87364122C2F7F000AEFD81 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B87364022C2F7F000AEFD81 /* main.swift */; };
+		9B87364822C2F80200AEFD81 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B87364722C2F80200AEFD81 /* Users.swift */; };
+		9B87364C22C2F82F00AEFD81 /* Sellers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B87364B22C2F82F00AEFD81 /* Sellers.swift */; };
+		9B87364E22C2F84200AEFD81 /* Buyers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B87364D22C2F84200AEFD81 /* Buyers.swift */; };
+		9B87365022C2F85300AEFD81 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B87364F22C2F85300AEFD81 /* Address.swift */; };
+		9B87365222C2F86200AEFD81 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B87365122C2F86200AEFD81 /* Enums.swift */; };
+		9B87365422C2F87700AEFD81 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B87365322C2F87700AEFD81 /* Products.swift */; };
+		9B87365622C2F89500AEFD81 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B87365522C2F89500AEFD81 /* Utility.swift */; };
+		9B87365822C2F8A800AEFD81 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B87365722C2F8A800AEFD81 /* IDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,14 @@
 /* Begin PBXFileReference section */
 		9B87363D22C2F7F000AEFD81 /* CelebFan */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CelebFan; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B87364022C2F7F000AEFD81 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9B87364722C2F80200AEFD81 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		9B87364B22C2F82F00AEFD81 /* Sellers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sellers.swift; sourceTree = "<group>"; };
+		9B87364D22C2F84200AEFD81 /* Buyers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buyers.swift; sourceTree = "<group>"; };
+		9B87364F22C2F85300AEFD81 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		9B87365122C2F86200AEFD81 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		9B87365322C2F87700AEFD81 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		9B87365522C2F89500AEFD81 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		9B87365722C2F8A800AEFD81 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,14 @@
 			isa = PBXGroup;
 			children = (
 				9B87364022C2F7F000AEFD81 /* main.swift */,
+				9B87364722C2F80200AEFD81 /* Users.swift */,
+				9B87364B22C2F82F00AEFD81 /* Sellers.swift */,
+				9B87364D22C2F84200AEFD81 /* Buyers.swift */,
+				9B87364F22C2F85300AEFD81 /* Address.swift */,
+				9B87365122C2F86200AEFD81 /* Enums.swift */,
+				9B87365322C2F87700AEFD81 /* Products.swift */,
+				9B87365522C2F89500AEFD81 /* Utility.swift */,
+				9B87365722C2F8A800AEFD81 /* IDisplay.swift */,
 			);
 			path = CelebFan;
 			sourceTree = "<group>";
@@ -119,7 +143,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B87364C22C2F82F00AEFD81 /* Sellers.swift in Sources */,
+				9B87364E22C2F84200AEFD81 /* Buyers.swift in Sources */,
+				9B87364822C2F80200AEFD81 /* Users.swift in Sources */,
+				9B87365422C2F87700AEFD81 /* Products.swift in Sources */,
+				9B87365622C2F89500AEFD81 /* Utility.swift in Sources */,
 				9B87364122C2F7F000AEFD81 /* main.swift in Sources */,
+				9B87365222C2F86200AEFD81 /* Enums.swift in Sources */,
+				9B87365022C2F85300AEFD81 /* Address.swift in Sources */,
+				9B87365822C2F8A800AEFD81 /* IDisplay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
